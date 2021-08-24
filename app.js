@@ -16,6 +16,8 @@
              ui.showTodo(res.todo);
             ui.clear();
            }
+       }).catch(err=>{
+           ui.showAlert(text)
        });
     }
 
