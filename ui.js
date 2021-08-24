@@ -31,6 +31,10 @@ class UI {
             <li class="list-group-item">${profile.company.catchPhrase}</li>
             <li class="list-group-item">${profile.company.bs}</li>
         </ul>
+        <h4>Todo list</h4>
+          
+        <ul id="todo" class="list-group">
+        </ul>
 
         </div>
 
@@ -48,6 +52,28 @@ class UI {
 
     clear(){
         this.alert.innerHTML = '';
+    }
+
+
+    showTodo(todo){
+        
+        let html = "";
+
+        todo.forEach(m=>{
+
+            if(m.completed){
+                html+=`<li class="list-group-item bg-success">${m.title}</li>`
+
+            }else{
+                html+=`<li class="list-group-item bg-secondary">${m.title}</li>`
+
+            }
+
+        });
+
+        this.profileContainer.querySelector('#todo').innerHTML=html;
+
+
     }
 
 }

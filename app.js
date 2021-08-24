@@ -13,6 +13,7 @@
                ui.showAlert(text);
            }else{
             ui.showProfile(res.profile[0]);
+             ui.showTodo(res.todo);
             ui.clear();
            }
        });
