@@ -1,2 +1,2 @@
 # jsAjaxUygulamasi
-js ile ajax uygulaması
+js ile ajax uygulaması projesi
